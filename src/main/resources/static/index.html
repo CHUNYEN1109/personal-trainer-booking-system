@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trainer Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Trainer Management</h1>
+    <button id="loadTrainersBtn">Load Trainers</button>
+    <div id="trainerList"></div>
+
+    <h2>Create Trainer</h2>
+    <form id="createTrainerForm">
+        <div>
+            <label for="trainerName">Trainer Name</label>
+            <input type="text" id="trainerName" name="name" required>
+        </div>
+        <button type="submit">Create Trainer</button>
+    </form>
+    <p id="createTrainerMessage"></p>
+
+    <h2>Update Trainer</h2>
+    <form id="updateTrainerForm">
+        <div>
+            <label for="updateTrainerId">Trainer ID</label>
+            <input type="number" id="updateTrainerId" name="id" required>
+        </div>
+
+        <div>
+            <label for="updateTrainerName">New Trainer Name</label>
+            <input type="text" id="updateTrainerName" name="name" required>
+        </div>
+        <button type="submit">Update Trainer</button>
+    </form>
+    <p id="updateTrainerMessage"></p>
+
+    <h2>Delete Trainer</h2>
+
+<form id="deleteTrainerForm">
+    <div>
+        <label for="deleteTrainerId">Trainer ID</label>
+        <input type="number" id="deleteTrainerId" name="id" required>
+    </div>
+    <button type="submit">Delete Trainer</button>
+</form>
+<p id="deleteTrainerMessage"></p>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
